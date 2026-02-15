@@ -17,3 +17,28 @@ for (let min of arr) {
     }
 }
 console.log(minimum, 'minimum value')
+
+
+//finding the max
+function toFindSecondMaximum(arr) {
+    let firstMax = 0;
+    let secondMax = 0;
+    for (let value of arr) {
+        if (value > firstMax) {
+            secondMax = firstMax
+            firstMax = value
+        } else if (value > secondMax && value !== firstMax) {
+            secondMax = value
+        }
+    }
+    console.log(secondMax, 'second max elem')
+    return secondMax
+
+}
+toFindSecondMaximum(arr)
+const k = 4
+function kthLargest(arr, k) {
+    arr.sort((a, b) => b - a);
+    return arr[k - 1];
+}
+console.log('4 th max', kthLargest(arr, k))
