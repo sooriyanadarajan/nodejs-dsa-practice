@@ -26,3 +26,8 @@ for (let right = 0; right < s.length; right++) {
 
 }
 console.log(max, characters, 'max lenght')
+
+// Input: s = "abcabcbb"
+// Output: 3
+// Explanation: "abc" is the longest substring
+

@@ -1,3 +1,5 @@
+
+const nums = [1, 3, 4, 5, 6, 7, 8, 9, 34]
 function maxSubArray(nums: number[]): number {
     let max = nums[0];
     let curr = nums[0];
